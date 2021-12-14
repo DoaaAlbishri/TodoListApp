@@ -47,6 +47,8 @@ class ViewController: UITableViewController {
             
             if todo.check {
                 cell.accessoryType = UITableViewCell.AccessoryType.checkmark
+            }else{
+                cell.accessoryType = UITableViewCell.AccessoryType.none
             }
 
             return cell

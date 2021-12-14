@@ -24,7 +24,7 @@ class AddTodoViewController: UIViewController {
         }
         
         @IBAction func addItemButton(_ sender: UIButton) {
-            if todoTitle.text == "" || todoNote.text == ""{
+            if todoTitle.text!.isEmpty || todoNote.text!.isEmpty{
                 dismiss(animated: true, completion: nil)
             }else{
                 let todo = TodoList(context: context)
